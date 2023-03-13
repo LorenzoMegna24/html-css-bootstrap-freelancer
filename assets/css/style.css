@@ -18,7 +18,8 @@ header,
   width: 10%;
   border-radius: 5px;
 }
-#portfolio .starside{
+#portfolio .starside,
+#contact .starside{
  background-color: black;
 }
 #portfolio i{
