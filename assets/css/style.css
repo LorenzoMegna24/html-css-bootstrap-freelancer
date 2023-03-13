@@ -4,7 +4,8 @@
 .navbar-brand{
   color: white;
 }
-header{
+header,
+#about{
   background-color: #1abc9c;
   color: white;
 }
