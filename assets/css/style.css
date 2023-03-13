@@ -1,0 +1,25 @@
+.bg-nav{
+  background-color: #2c3e50;
+}
+.navbar-brand{
+  color: white;
+}
+header{
+  background-color: #1abc9c;
+  color: white;
+}
+.section-header i{
+  font-size: 20px;
+}
+.starside{
+  background-color: white;
+  height: 3px;
+  width: 10%;
+  border-radius: 5px;
+}
+#portfolio .starside{
+ background-color: black;
+}
+#portfolio i{
+  color: black;
+}
