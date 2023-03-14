@@ -13,24 +13,32 @@
   </head>
   <body>
     <header>
-      <nav class="navbar bg-nav navbar-expand-lg fixed-top" data-bs-theme="dark">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-nav fixed-top" data-bs-theme="dark">
+        <div class="container">
           <a class="navbar-brand" href="#">START BOOTSTRAP</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-theme="dark" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item text-uppercase">
+                <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact me</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
+      </nav>      
       <section>
         <div class="section-header container text-center">
-          <div class="row">
-            <div class="col-12 mt-2 p-5">
-              <img class="img-fluid" src="assets/img/avatar.svg" alt="">
+          <div class="row mt-5">
+            <div class="col-12 pt-3 pb-3">
+              <img class="w-25" src="assets/img/avatar.svg" alt="">
             </div>
         </div>
         <div class="row mb-3">
@@ -58,7 +66,7 @@
     <main>
       <section id="portfolio">
         <div class="container mt-5">
-          <div class="row text-center mb-3">
+          <div class="row text-center pt-5 mb-3">
             <div class="col-12">
               <h2>PORTFOLIO</h2>
             </div>
@@ -145,18 +153,68 @@
             <div class="col-5 starside">
             </div>
           </div>
-          <div class="row">
+          <div class="row contact-form">
             <div class="col-12">
-              <div class="form-floating">
-                <textarea class="form-control border-bottom" placeholder="Comments" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Comments</label>
+              <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="floatingInput" placeholder="Name">
+                <label for="floatingInput">Name</label>
               </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="phone-number" class="form-control" id="floatingInput" placeholder="Phone number">
+                <label for="floatingInput">Phone number</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Message</label>
+              </div>
+              <button type="button" class="btn mb-5">Send</button>
             </div>
           </div>
         </div>
       </section>
     </main>
-
+    <footer>
+      <section id="social">
+        <div class="container d-flex justify-content-center text-center">
+          <div class="row mt-5">
+            <div class="col-12 col-md-4 mb-3">
+              <h6>
+                LOCATION
+              </h6>
+              <p>2215 John Daniel Drive Clark, MO 54243</p>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <h6>
+                AROUND THE WEB
+              </h6>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a> 
+              <a href="#"><i class="fa-brands fa-twitter"></i></a> 
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+              <h6>
+                ABOUT FREELANCER
+              </h6>
+              <p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrap</a>.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="copyright">
+        <div class="container text-center d-flex align-items-center justify-content-center pb-3 pt-3">
+          <div class="row mt-3">
+            <div class="col-12">
+              <p>Copyright <i class="fa-regular fa-copyright"></i> Your Website 2019</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
 
 
 
